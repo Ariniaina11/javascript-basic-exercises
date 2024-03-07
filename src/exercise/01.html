@@ -14,13 +14,17 @@
 
     <script>
       function reverseString(value) {
-        // Write your code here
+        const array = value.split(''); // conversion du string en array
+        const reversed_array = array.reverse(); // renverser l'array
+        const reversed_string = reversed_array.join(''); // reconversion en string
+
+        return reversed_string;
       }
 
       function handleReverse() {
         const {value} = document.getElementById('input');
 
-        // Write your code here
+        alert( value ? reverseString(value) : 'Please, enter a value.' )
       }
     </script>
   </body>
