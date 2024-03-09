@@ -1,2 +1,22 @@
-<!-- String reverse -->
-<!-- http://localhost:3000/isolated/exercise/01.html -->
+<!-- Transform an array of number into a formatted string -->
+<!-- http://localhost:3000/isolated/exercise/06.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform an array of number into a formatted string</title>
+</head>
+<body>
+    <script>
+        function transformArray(arr){
+            return arr.map(
+                (number) => number = String(number).padStart(4, '0')
+            );
+        }
+
+        const array = transformArray([1, 10, 7, 0]);
+        console.log(array); // ['0001', '0010', '0007', '0000']
+    </script>
+</body>
+</html>
